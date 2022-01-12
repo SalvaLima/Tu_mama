@@ -1,13 +1,24 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        Libro miLibro=new Libro("don quijote","9687j","cervantes",95);
-        Libro miLibro2=new Libro("España","12948k","falete",20);
-        System.out.println("mi libro se llama "+ miLibro.titulo + "con isbn " + miLibro.isbn + " y con autor " + miLibro.autor);
-        System.out.println("mi libro se llama "+ miLibro2.titulo + "con isbn " + miLibro2.isbn + " y con autor " + miLibro2.autor);
+        Scanner scn = new Scanner(System.in);
+        String nombreCliente, numeroCliente;
+        double tipoInteres, saldo;
+
+        Cuenta cuenta1 = new Cuenta();
+        System.out.println("Nombre : ");
+        nombreCliente = scn.nextLine();
+        System.out.println("Número : ");
+        numeroCliente = scn.nextLine();
+        System.out.println("Tipo de interés : ");
+        tipoInteres = scn.nextDouble();
+        System.out.println("Saldo : ");
+        saldo = scn.nextDouble();
+
     }
 
 }

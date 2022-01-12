@@ -77,7 +77,7 @@ public class Cuenta {
             this.setSaldo( this.getSaldo() - cantidad);
             realizado=true;
         }
-        return realizado; //tu mama
+        return realizado;
     }
 
     public Cuenta (Cuenta cta){
